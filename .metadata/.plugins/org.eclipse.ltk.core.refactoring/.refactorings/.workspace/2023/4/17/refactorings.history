@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;jfx&apos; to &apos;ComboBox&apos;" description="Rename resource &apos;jfx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/jfx" name="ComboBox" stamp="1682337924639" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;jfx&apos; to &apos;FileChooser&apos;" description="Rename resource &apos;jfx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/jfx" name="FileChooser" stamp="1682415329776" updateReferences="true"/>
+</session>

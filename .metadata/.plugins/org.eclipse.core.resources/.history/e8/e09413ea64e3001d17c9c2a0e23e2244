@@ -1,0 +1,38 @@
+package application;
+
+import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.stage.FileChooser;
+
+public class MainController {
+	
+	@FXML
+	private Button btn1;
+	
+	@FXML
+	private Button btn2;
+	
+	@FXML
+	private ListView listview;
+	
+	public void Button1Action(ActionEvent event){
+		FileChooser fc = new FileChooser();
+		fc.setInitialDirectory(new File("C:\\Users\\Luka Rudan\\Desktop"));
+		fc.getExtensionFilters().addAll(new ExtensionFilter("PDF Files", "*.pdf"));
+		File selectedFile = fc.showOpenDialog(null);
+		
+		if(selectedFile != null){
+			listview.getItems().add(selectedFile.getAbsolutePath());
+		}else{
+			System.out.println("file is not valid");
+		}
+	}
+	
+	public void Button2Action(ActionEvent event){
+		
+	}
+}
